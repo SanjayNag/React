@@ -1,0 +1,874 @@
+﻿{
+  "AuditoriumData": [
+    {
+      "CityName": "Bengaluru",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Chennai",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Hyderabad",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Pune",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Mumbai",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Delhi",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Cochin",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Panaji",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Vizag",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    },
+    {
+      "CityName": "Patna",
+      "SuccessRate": 100.0,
+      "DateAndTime": 1332268200000,
+      "calibration": [
+        {
+          "name": "Cricket",
+          "failed": 0,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Hockey",
+          "failed": 1,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Badminton",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 2,
+          "passed": 2,
+          "recovered": 0,
+          "status": "passed",
+          "additional_data": []
+        },
+        {
+          "name": "Tennis",
+          "failed": 2,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Table Tennis",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "Archery",
+          "failed": 3,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "Squash",
+          "failed": 0,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Not Run",
+          "additional_data": []
+        },
+        {
+          "name": "Cricket",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        }
+      ]
+    }
+  ]
+}
