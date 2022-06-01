@@ -1,9 +1,15 @@
 ﻿const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3001;
+
+let jsonData = require("./data/input.json");
 
 app.get("/getData", (req, res) => {
-  res.send("Hello World!");
+  return res.send(jsonData.AuditoriumData);
+});
+
+app.post("/getDataByDate", (req, res) => {
+  console.log();
 });
 
 app.listen(port, () => {

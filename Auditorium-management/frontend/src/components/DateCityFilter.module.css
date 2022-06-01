@@ -1,0 +1,17 @@
+﻿.elementBackground {
+  padding: 25px;
+  background-color: #f4fafd;
+  width: 100%;
+}
+
+.elementPosition {
+  width: 100%;
+  position: relative;
+  left: -27%;
+}
+
+.title {
+  color: #69c4f5;
+  position: relative;
+  left: -40%;
+}
