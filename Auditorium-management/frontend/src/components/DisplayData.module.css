@@ -1,0 +1,37 @@
+﻿.success {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(81, 255, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.aboveAvg {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(251, 255, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.avg {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(255, 128, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.fail {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(255, 1, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.noData {
+  font-size: 20px;
+  position: relative;
+  left: 45%;
+}

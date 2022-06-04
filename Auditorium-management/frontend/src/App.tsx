@@ -1,29 +1,81 @@
-import { useEffect } from "react";
-import "./App.css";
-import { callGetData } from "./services/Services";
+import React, { useState } from "react";
 import { DateCityFilter } from "./components/DateCityFilter";
-import { Tabs, Tab } from "react-bootstrap";
+import { DisplayData } from "./components/DisplayData";
+import { Table, Tabs, Tab } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import classes from "./App.module.css";
 
 function App() {
-  useEffect(() => {
-    callGetData().then((response) => console.log(response));
-  }, []);
+  const [selectedCities, setSelectedCities] = useState([] as any);
+  const [selectedData, setSelectedData] = useState([] as any);
+  const [selectedCity, setSelectedCity] = useState("");
+  const [key, setKey] = useState<string>("listView");
+
+  const handleSelectedCitiesProps = (values: any[]) => {
+    setSelectedCities(values);
+  };
+
+  const handleSelectedData = (cityName: string, values: any[]) => {
+    setSelectedCity(cityName);
+    setSelectedData(values);
+    setKey("detailView");
+  };
 
   return (
-    <div className="App">
-      <DateCityFilter />
+    <React.Fragment>
+      <DateCityFilter getSelectedCities={handleSelectedCitiesProps} />
       <br></br>
       <br></br>
-      <Tabs defaultActiveKey="listView" id="uncontrolled-tab-example">
+      <Tabs
+        defaultActiveKey="listView"
+        id="uncontrolled-tab-example"
+        activeKey={key}
+        onSelect={(key) => key !== null && setKey(key)}
+      >
         <Tab eventKey="listView" title="List View">
-          <span>No Data found</span>
+          <DisplayData cities={selectedCities} selected={handleSelectedData} />
         </Tab>
         <Tab eventKey="detailView" title="Detail View">
-          <span>No Data found</span>
+          {selectedData.length !== 0 ? (
+            <Table striped>
+              <thead>
+                <tr>
+                  <th>City</th>
+                  {Object.keys(selectedData).map((headers) => (
+                    <th>
+                      {headers === "name"
+                        ? "Name"
+                        : headers === "failed"
+                        ? "Cancelled"
+                        : headers === "passed"
+                        ? "Booked"
+                        : headers === "recovered"
+                        ? "Recovered"
+                        : headers === "status"
+                        ? "Status"
+                        : headers !== "additional_data"}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody style={{ borderColor: "lightgray" }}>
+                <tr>
+                  <td>{selectedCity}</td>
+                  <td>{selectedData.name}</td>
+                  <td>{selectedData.failed}</td>
+                  <td>{selectedData.passed}</td>
+                  <td>{selectedData.recovered}</td>
+                  <td>{selectedData.status}</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </Table>
+          ) : (
+            <span className={classes.noData}>No Data found</span>
+          )}
         </Tab>
       </Tabs>
-    </div>
+    </React.Fragment>
   );
 }
 

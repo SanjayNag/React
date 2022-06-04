@@ -31,7 +31,7 @@
         },
         {
           "name": "VolleyBall",
-          "failed": 2,
+          "failed": 1,
           "passed": 2,
           "recovered": 0,
           "status": "passed",
@@ -58,7 +58,7 @@
           "failed": 3,
           "passed": 1,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Failed",
           "additional_data": []
         },
         {
@@ -78,18 +78,18 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
-          "failed": 4,
-          "passed": 1,
+          "name": "kabaddi",
+          "failed": 0,
+          "passed": 0,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Not Run",
           "additional_data": []
         }
       ]
     },
     {
       "CityName": "Chennai",
-      "SuccessRate": 100.0,
+      "SuccessRate": 10.0,
       "DateAndTime": 1332268200000,
       "calibration": [
         {
@@ -165,7 +165,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -176,7 +176,7 @@
     },
     {
       "CityName": "Hyderabad",
-      "SuccessRate": 100.0,
+      "SuccessRate": 60.0,
       "DateAndTime": 1332268200000,
       "calibration": [
         {
@@ -252,7 +252,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -263,7 +263,7 @@
     },
     {
       "CityName": "Pune",
-      "SuccessRate": 100.0,
+      "SuccessRate": 35.0,
       "DateAndTime": 1332268200000,
       "calibration": [
         {
@@ -339,7 +339,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -426,7 +426,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -513,7 +513,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -600,7 +600,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -687,7 +687,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -774,7 +774,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
@@ -861,7 +861,7 @@
           "additional_data": []
         },
         {
-          "name": "Cricket",
+          "name": "kabaddi",
           "failed": 4,
           "passed": 1,
           "recovered": 0,
