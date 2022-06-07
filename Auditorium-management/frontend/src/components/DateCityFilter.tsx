@@ -1,58 +1,96 @@
-﻿import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect, useRef } from "react";
 import { DateRangePicker, CheckPicker } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
 import classes from "./DateCityFilter.module.css";
-import { callGetData } from "../services/Services";
 import { Col, Row } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
-import { setStadiumDetails } from "../store/DataSlice";
+import { useSelector } from "react-redux";
 import { Checkbox } from "rsuite";
+import { useDispatch } from "react-redux";
+import { setDateTimeFilteredData } from "../store/DataSlice";
+import { callDateRangeFilterData } from "../services/Services";
 
 export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
   const [cities, setCities] = useState([] as any);
   const [selectedCities, setSelectedCities] = useState([] as any);
+  const [dateRange, setDateRange] = useState([] as any);
+  const [checked, setChecked] = useState(Boolean);
+
   const dispatch = useDispatch();
 
   const appData: any = useSelector((state) => state);
 
-  useEffect(() => {
-    const getData = () => {
-      callGetData().then((response) => dispatch(setStadiumDetails(response)));
-    };
-    getData();
-  }, []);
+  const usePreviousVal = (value) => {
+    const ref = useRef();
+    useEffect(() => {
+      ref.current = value;
+    }, [value]);
+    return ref.current;
+  };
+
+  const prevAppData = usePreviousVal(appData.stadiumList.stadiumData);
 
   useEffect(() => {
-    const apiData: any[] = appData.stadiumList.stadiumData;
-    let extractedCities = apiData.map((object) =>
-      Object.keys(object).map((values) => object[values].CityName)
-    );
-    let cities: any = [];
-    Object.values(extractedCities).map((values) =>
-      values.map((val) => cities.indexOf(val) === -1 && cities.push(val))
-    );
+    if (prevAppData !== appData.stadiumList.stadiumData) {
+      const apiData: any[] = appData.stadiumList.stadiumData;
+      let extractedCities = apiData.map((object) =>
+        Object.keys(object).map((values) => object[values].CityName)
+      );
+      let cities: any = [];
+      Object.values(extractedCities).map((values) =>
+        values.map((val) => cities.indexOf(val) === -1 && cities.push(val))
+      );
 
-    let filteredCities: any = [];
-    cities.map((val) => filteredCities.push({ label: val, value: val }));
+      let filteredCities: any = [];
+      cities.map((val) => filteredCities.push({ label: val, value: val }));
 
-    setSelectedCities(cities);
-    cities.length > 0 && setCities(filteredCities);
-    props.getSelectedCities(filteredCities);
+      setSelectedCities(cities);
+      cities.length > 0 && setCities(filteredCities);
+      props.getSelectedCities(filteredCities, []);
+    }
   }, [appData]);
 
   const handleChangePickerChange = (value) => {
     setSelectedCities(value);
     props.getSelectedCities(
-      value.map((city) => ({ label: city, value: city }))
+      value.length === 0
+        ? []
+        : value.map((city) => ({ label: city, value: city })),
+      dateRange
     );
   };
 
   const handleCheckAll = (value, checked) => {
     setSelectedCities(checked ? cities.map((city) => city.value) : []);
+    setChecked(checked);
     props.getSelectedCities(
       checked
         ? cities.map((city) => ({ label: city.value, value: city.value }))
-        : []
+        : [],
+      dateRange
+    );
+  };
+
+  const handleDateRangeChangePicker = async (dateRange: [Date, Date]) => {
+    setDateRange(dateRange);
+    const response = await callDateRangeFilterData(dateRange);
+    response.length > 0 && dispatch(setDateTimeFilteredData(response));
+
+    props.getSelectedCities(
+      selectedCities.map((city) => ({ label: city.value, value: city.value })),
+      dateRange.length > 0 ? dateRange : []
+    );
+  };
+
+  const handleCleanDateRangeChangePicker = (event) => {
+    setDateRange([]);
+    props.getSelectedCities(
+      checked
+        ? []
+        : selectedCities.map((city) => ({
+            label: city.value,
+            value: city.value,
+          })),
+      []
     );
   };
 
@@ -71,7 +109,12 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
         <div className={classes.elementPosition}>
           <Row>
             <Col xs={11}>
-              <DateRangePicker format="yyyy-MM-dd hh:mm aa" showMeridian />
+              <DateRangePicker
+                format="yyyy-MM-dd hh:mm aa"
+                showMeridian
+                onOk={handleDateRangeChangePicker}
+                onClean={handleCleanDateRangeChangePicker}
+              />
               &nbsp; &nbsp;
               <CheckPicker
                 data={cities}

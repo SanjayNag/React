@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { DateCityFilter } from "./components/DateCityFilter";
+import { callGetData, callDateRangeFilterData } from "./services/Services";
 import { DisplayData } from "./components/DisplayData";
 import { Table, Tabs, Tab } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import classes from "./App.module.css";
+import { useDispatch } from "react-redux";
+import { setStadiumDetails, setDateTimeFilteredData } from "./store/DataSlice";
 
 function App() {
   const [selectedCities, setSelectedCities] = useState([] as any);
   const [selectedData, setSelectedData] = useState([] as any);
   const [selectedCity, setSelectedCity] = useState("");
   const [key, setKey] = useState<string>("listView");
+  const [dateRange, setDateRange] = useState([] as any);
 
-  const handleSelectedCitiesProps = (values: any[]) => {
+  const dispatch = useDispatch();
+
+  const handleSelectedCitiesProps = (values: any[], dateRange: any[]) => {
     setSelectedCities(values);
+    setDateRange(dateRange);
   };
 
   const handleSelectedData = (cityName: string, values: any[]) => {
@@ -20,6 +27,13 @@ function App() {
     setSelectedData(values);
     setKey("detailView");
   };
+
+  useEffect(() => {
+    const getData = () => {
+      callGetData().then((response) => dispatch(setStadiumDetails(response)));
+    };
+    getData();
+  }, []);
 
   return (
     <React.Fragment>
@@ -33,7 +47,11 @@ function App() {
         onSelect={(key) => key !== null && setKey(key)}
       >
         <Tab eventKey="listView" title="List View">
-          <DisplayData cities={selectedCities} selected={handleSelectedData} />
+          <DisplayData
+            cities={selectedCities}
+            selectedDateRange={dateRange}
+            selected={handleSelectedData}
+          />
         </Tab>
         <Tab eventKey="detailView" title="Detail View">
           {selectedData.length !== 0 ? (
