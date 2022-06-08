@@ -53,22 +53,20 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
 
   useEffect(() => {
     if (props.selectedDateRange.length === 0 && props.cities.length > 0) {
-      if (!_.isEqual(prevPropsCities, props.cities)) {
-        setFilteredData([]);
-        const apiData: any[] = appData.stadiumList.stadiumData;
-        let citiesList: any = [];
-        apiData.length > 0 &&
-          apiData.map((object) =>
-            Object.keys(object).map((values) =>
-              props.cities.map((city) => {
-                city.value === object[values].CityName &&
-                  citiesList.push(object[values]);
-              })
-            )
-          );
-        console.log(citiesList);
-        setFilteredData(citiesList);
-      }
+      setFilteredData([]);
+      const apiData: any[] = appData.stadiumList.stadiumData;
+      let citiesList: any = [];
+      apiData.length > 0 &&
+        apiData.map((object) =>
+          Object.keys(object).map((values) =>
+            props.cities.map((city) => {
+              city.value === object[values].CityName &&
+                citiesList.push(object[values]);
+            })
+          )
+        );
+      console.log(citiesList);
+      setFilteredData(citiesList);
     }
   }, [props.cities]);
 

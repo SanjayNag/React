@@ -76,7 +76,7 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
     response.length > 0 && dispatch(setDateTimeFilteredData(response));
 
     props.getSelectedCities(
-      selectedCities.map((city) => ({ label: city.value, value: city.value })),
+      selectedCities.map((city) => ({ label: city, value: city })),
       dateRange.length > 0 ? dateRange : []
     );
   };
@@ -84,12 +84,10 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
   const handleCleanDateRangeChangePicker = (event) => {
     setDateRange([]);
     props.getSelectedCities(
-      checked
-        ? []
-        : selectedCities.map((city) => ({
-            label: city.value,
-            value: city.value,
-          })),
+      selectedCities.map((city) => ({
+        label: city,
+        value: city,
+      })),
       []
     );
   };
@@ -114,6 +112,7 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
                 showMeridian
                 onOk={handleDateRangeChangePicker}
                 onClean={handleCleanDateRangeChangePicker}
+                placeholder="2022-06-22 06:52 PM ~ 2022-06-23 06:52 PM"
               />
               &nbsp; &nbsp;
               <CheckPicker

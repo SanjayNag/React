@@ -7,7 +7,7 @@
       "calibration": [
         {
           "name": "Cricket",
-          "failed": 0,
+          "failed": 1,
           "passed": 1,
           "recovered": 0,
           "status": "Passed",
@@ -16,7 +16,7 @@
         {
           "name": "Hockey",
           "failed": 1,
-          "passed": 0,
+          "passed": 2,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
@@ -39,7 +39,7 @@
         },
         {
           "name": "Tennis",
-          "failed": 2,
+          "failed": 1,
           "passed": 1,
           "recovered": 0,
           "status": "Failed",
@@ -55,15 +55,15 @@
         },
         {
           "name": "Swimming",
-          "failed": 3,
-          "passed": 1,
+          "failed": 1,
+          "passed": 3,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Archery",
-          "failed": 3,
+          "failed": 1,
           "passed": 1,
           "recovered": 0,
           "status": "Failed",
@@ -80,9 +80,9 @@
         {
           "name": "kabaddi",
           "failed": 0,
-          "passed": 0,
+          "passed": 3,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Passed",
           "additional_data": []
         }
       ]
@@ -95,21 +95,13 @@
         {
           "name": "Cricket",
           "failed": 0,
-          "passed": 1,
+          "passed": 2,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
         },
         {
           "name": "Hockey",
-          "failed": 1,
-          "passed": 0,
-          "recovered": 0,
-          "status": "Failed",
-          "additional_data": []
-        },
-        {
-          "name": "Badminton",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -117,23 +109,23 @@
           "additional_data": []
         },
         {
-          "name": "VolleyBall",
+          "name": "Badminton",
           "failed": 2,
-          "passed": 2,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 1,
+          "passed": 0,
           "recovered": 0,
           "status": "passed",
           "additional_data": []
         },
         {
           "name": "Tennis",
-          "failed": 2,
-          "passed": 1,
-          "recovered": 0,
-          "status": "Failed",
-          "additional_data": []
-        },
-        {
-          "name": "Table Tennis",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -141,8 +133,16 @@
           "additional_data": []
         },
         {
+          "name": "Table Tennis",
+          "failed": 2,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
           "name": "Swimming",
-          "failed": 3,
+          "failed": 0,
           "passed": 1,
           "recovered": 0,
           "status": "Passed",
@@ -150,23 +150,23 @@
         },
         {
           "name": "Archery",
-          "failed": 3,
-          "passed": 1,
+          "failed": 2,
+          "passed": 2,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Squash",
-          "failed": 0,
-          "passed": 0,
+          "failed": 2,
+          "passed": 1,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Failed",
           "additional_data": []
         },
         {
           "name": "kabaddi",
-          "failed": 4,
+          "failed": 2,
           "passed": 1,
           "recovered": 0,
           "status": "Passed",
@@ -182,9 +182,9 @@
         {
           "name": "Cricket",
           "failed": 0,
-          "passed": 1,
+          "passed": 0,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Not Run",
           "additional_data": []
         },
         {
@@ -198,9 +198,9 @@
         {
           "name": "Badminton",
           "failed": 0,
-          "passed": 0,
+          "passed": 3,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Passed",
           "additional_data": []
         },
         {
@@ -213,7 +213,7 @@
         },
         {
           "name": "Tennis",
-          "failed": 2,
+          "failed": 0,
           "passed": 1,
           "recovered": 0,
           "status": "Failed",
@@ -230,7 +230,7 @@
         {
           "name": "Swimming",
           "failed": 3,
-          "passed": 1,
+          "passed": 3,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
@@ -238,25 +238,25 @@
         {
           "name": "Archery",
           "failed": 3,
-          "passed": 1,
+          "passed": 0,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Squash",
-          "failed": 0,
-          "passed": 0,
+          "failed": 1,
+          "passed": 3,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Passed",
           "additional_data": []
         },
         {
           "name": "kabaddi",
-          "failed": 4,
-          "passed": 1,
+          "failed": 0,
+          "passed": 0,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Not Run",
           "additional_data": []
         }
       ]
@@ -276,8 +276,8 @@
         },
         {
           "name": "Hockey",
-          "failed": 1,
-          "passed": 0,
+          "failed": 4,
+          "passed": 1,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
@@ -292,10 +292,10 @@
         },
         {
           "name": "VolleyBall",
-          "failed": 2,
-          "passed": 2,
+          "failed": 0,
+          "passed": 0,
           "recovered": 0,
-          "status": "passed",
+          "status": "Not Run",
           "additional_data": []
         },
         {
@@ -308,6 +308,14 @@
         },
         {
           "name": "Table Tennis",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "failed",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -315,27 +323,19 @@
           "additional_data": []
         },
         {
-          "name": "Swimming",
-          "failed": 3,
-          "passed": 1,
+          "name": "Archery",
+          "failed": 0,
+          "passed": 4,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
         },
         {
-          "name": "Archery",
-          "failed": 3,
-          "passed": 1,
-          "recovered": 0,
-          "status": "Failed",
-          "additional_data": []
-        },
-        {
           "name": "Squash",
-          "failed": 0,
+          "failed": 4,
           "passed": 0,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Failed",
           "additional_data": []
         },
         {
@@ -355,8 +355,8 @@
       "calibration": [
         {
           "name": "Cricket",
-          "failed": 0,
-          "passed": 1,
+          "failed": 5,
+          "passed": 5,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
@@ -387,18 +387,18 @@
         },
         {
           "name": "Tennis",
-          "failed": 2,
-          "passed": 1,
+          "failed": 5,
+          "passed": 0,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Table Tennis",
-          "failed": 0,
-          "passed": 0,
+          "failed": 3,
+          "passed": 5,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Passed",
           "additional_data": []
         },
         {
@@ -411,8 +411,8 @@
         },
         {
           "name": "Archery",
-          "failed": 3,
-          "passed": 1,
+          "failed": 5,
+          "passed": 3,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
@@ -427,8 +427,8 @@
         },
         {
           "name": "kabaddi",
-          "failed": 4,
-          "passed": 1,
+          "failed": 5,
+          "passed": 0,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
@@ -443,21 +443,29 @@
         {
           "name": "Cricket",
           "failed": 0,
-          "passed": 1,
+          "passed": 6,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
         },
         {
           "name": "Hockey",
-          "failed": 1,
-          "passed": 0,
+          "failed": 6,
+          "passed": 3,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Badminton",
+          "failed": 3,
+          "passed": 6,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -465,27 +473,19 @@
           "additional_data": []
         },
         {
-          "name": "VolleyBall",
-          "failed": 2,
-          "passed": 2,
-          "recovered": 0,
-          "status": "passed",
-          "additional_data": []
-        },
-        {
           "name": "Tennis",
-          "failed": 2,
-          "passed": 1,
+          "failed": 6,
+          "passed": 0,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Table Tennis",
-          "failed": 0,
-          "passed": 0,
+          "failed": 6,
+          "passed": 6,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Passed",
           "additional_data": []
         },
         {
@@ -498,14 +498,6 @@
         },
         {
           "name": "Archery",
-          "failed": 3,
-          "passed": 1,
-          "recovered": 0,
-          "status": "Failed",
-          "additional_data": []
-        },
-        {
-          "name": "Squash",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -513,9 +505,17 @@
           "additional_data": []
         },
         {
+          "name": "Squash",
+          "failed": 6,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
           "name": "kabaddi",
           "failed": 4,
-          "passed": 1,
+          "passed": 6,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
@@ -525,11 +525,11 @@
     {
       "CityName": "Cochin",
       "SuccessRate": 100.0,
-      "DateAndTime": 1655973566000,
+      "DateAndTime": 1655454819000,
       "calibration": [
         {
           "name": "Cricket",
-          "failed": 0,
+          "failed": 1,
           "passed": 1,
           "recovered": 0,
           "status": "Passed",
@@ -538,7 +538,7 @@
         {
           "name": "Hockey",
           "failed": 1,
-          "passed": 0,
+          "passed": 2,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
@@ -553,7 +553,7 @@
         },
         {
           "name": "VolleyBall",
-          "failed": 2,
+          "failed": 1,
           "passed": 2,
           "recovered": 0,
           "status": "passed",
@@ -561,7 +561,7 @@
         },
         {
           "name": "Tennis",
-          "failed": 2,
+          "failed": 1,
           "passed": 1,
           "recovered": 0,
           "status": "Failed",
@@ -577,15 +577,15 @@
         },
         {
           "name": "Swimming",
-          "failed": 3,
-          "passed": 1,
+          "failed": 1,
+          "passed": 3,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Archery",
-          "failed": 3,
+          "failed": 1,
           "passed": 1,
           "recovered": 0,
           "status": "Failed",
@@ -601,8 +601,8 @@
         },
         {
           "name": "kabaddi",
-          "failed": 4,
-          "passed": 1,
+          "failed": 0,
+          "passed": 3,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
@@ -611,27 +611,19 @@
     },
     {
       "CityName": "Panaji",
-      "SuccessRate": 100.0,
-      "DateAndTime": 1656059966000,
+      "SuccessRate": 10.0,
+      "DateAndTime": 1655541219000,
       "calibration": [
         {
           "name": "Cricket",
           "failed": 0,
-          "passed": 1,
+          "passed": 2,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
         },
         {
           "name": "Hockey",
-          "failed": 1,
-          "passed": 0,
-          "recovered": 0,
-          "status": "Failed",
-          "additional_data": []
-        },
-        {
-          "name": "Badminton",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -639,23 +631,23 @@
           "additional_data": []
         },
         {
-          "name": "VolleyBall",
+          "name": "Badminton",
           "failed": 2,
-          "passed": 2,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Failed",
+          "additional_data": []
+        },
+        {
+          "name": "VolleyBall",
+          "failed": 1,
+          "passed": 0,
           "recovered": 0,
           "status": "passed",
           "additional_data": []
         },
         {
           "name": "Tennis",
-          "failed": 2,
-          "passed": 1,
-          "recovered": 0,
-          "status": "Failed",
-          "additional_data": []
-        },
-        {
-          "name": "Table Tennis",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -663,8 +655,16 @@
           "additional_data": []
         },
         {
+          "name": "Table Tennis",
+          "failed": 2,
+          "passed": 0,
+          "recovered": 0,
+          "status": "Passed",
+          "additional_data": []
+        },
+        {
           "name": "Swimming",
-          "failed": 3,
+          "failed": 0,
           "passed": 1,
           "recovered": 0,
           "status": "Passed",
@@ -672,23 +672,23 @@
         },
         {
           "name": "Archery",
-          "failed": 3,
-          "passed": 1,
+          "failed": 2,
+          "passed": 2,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Squash",
-          "failed": 0,
-          "passed": 0,
+          "failed": 2,
+          "passed": 1,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Failed",
           "additional_data": []
         },
         {
           "name": "kabaddi",
-          "failed": 4,
+          "failed": 2,
           "passed": 1,
           "recovered": 0,
           "status": "Passed",
@@ -698,15 +698,15 @@
     },
     {
       "CityName": "Vizag",
-      "SuccessRate": 100.0,
-      "DateAndTime": 1656146442000,
+      "SuccessRate": 60.0,
+      "DateAndTime": 1655627791000,
       "calibration": [
         {
           "name": "Cricket",
           "failed": 0,
-          "passed": 1,
+          "passed": 0,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Not Run",
           "additional_data": []
         },
         {
@@ -720,9 +720,9 @@
         {
           "name": "Badminton",
           "failed": 0,
-          "passed": 0,
+          "passed": 3,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Passed",
           "additional_data": []
         },
         {
@@ -735,7 +735,7 @@
         },
         {
           "name": "Tennis",
-          "failed": 2,
+          "failed": 0,
           "passed": 1,
           "recovered": 0,
           "status": "Failed",
@@ -752,7 +752,7 @@
         {
           "name": "Swimming",
           "failed": 3,
-          "passed": 1,
+          "passed": 3,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
@@ -760,33 +760,33 @@
         {
           "name": "Archery",
           "failed": 3,
-          "passed": 1,
+          "passed": 0,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
         },
         {
           "name": "Squash",
-          "failed": 0,
-          "passed": 0,
+          "failed": 1,
+          "passed": 3,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Passed",
           "additional_data": []
         },
         {
           "name": "kabaddi",
-          "failed": 4,
-          "passed": 1,
+          "failed": 0,
+          "passed": 0,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Not Run",
           "additional_data": []
         }
       ]
     },
     {
       "CityName": "Patna",
-      "SuccessRate": 100.0,
-      "DateAndTime": 1656232842000,
+      "SuccessRate": 35.0,
+      "DateAndTime": 1655714191000,
       "calibration": [
         {
           "name": "Cricket",
@@ -798,8 +798,8 @@
         },
         {
           "name": "Hockey",
-          "failed": 1,
-          "passed": 0,
+          "failed": 4,
+          "passed": 1,
           "recovered": 0,
           "status": "Failed",
           "additional_data": []
@@ -814,10 +814,10 @@
         },
         {
           "name": "VolleyBall",
-          "failed": 2,
-          "passed": 2,
+          "failed": 0,
+          "passed": 0,
           "recovered": 0,
-          "status": "passed",
+          "status": "Not Run",
           "additional_data": []
         },
         {
@@ -830,6 +830,14 @@
         },
         {
           "name": "Table Tennis",
+          "failed": 4,
+          "passed": 1,
+          "recovered": 0,
+          "status": "failed",
+          "additional_data": []
+        },
+        {
+          "name": "Swimming",
           "failed": 0,
           "passed": 0,
           "recovered": 0,
@@ -837,27 +845,19 @@
           "additional_data": []
         },
         {
-          "name": "Swimming",
-          "failed": 3,
-          "passed": 1,
+          "name": "Archery",
+          "failed": 0,
+          "passed": 4,
           "recovered": 0,
           "status": "Passed",
           "additional_data": []
         },
         {
-          "name": "Archery",
-          "failed": 3,
-          "passed": 1,
-          "recovered": 0,
-          "status": "Failed",
-          "additional_data": []
-        },
-        {
           "name": "Squash",
-          "failed": 0,
+          "failed": 4,
           "passed": 0,
           "recovered": 0,
-          "status": "Not Run",
+          "status": "Failed",
           "additional_data": []
         },
         {
