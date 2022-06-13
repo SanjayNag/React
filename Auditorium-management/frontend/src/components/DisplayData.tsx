@@ -53,22 +53,20 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
 
   useEffect(() => {
     if (props.selectedDateRange.length === 0 && props.cities.length > 0) {
-      if (!_.isEqual(prevPropsCities, props.cities)) {
-        setFilteredData([]);
-        const apiData: any[] = appData.stadiumList.stadiumData;
-        let citiesList: any = [];
-        apiData.length > 0 &&
-          apiData.map((object) =>
-            Object.keys(object).map((values) =>
-              props.cities.map((city) => {
-                city.value === object[values].CityName &&
-                  citiesList.push(object[values]);
-              })
-            )
-          );
-        console.log(citiesList);
-        setFilteredData(citiesList);
-      }
+      setFilteredData([]);
+      const apiData: any[] = appData.stadiumList.stadiumData;
+      let citiesList: any = [];
+      apiData.length > 0 &&
+        apiData.map((object) =>
+          Object.keys(object).map((values) =>
+            props.cities.map((city) => {
+              city.value === object[values].CityName &&
+                citiesList.push(object[values]);
+            })
+          )
+        );
+      console.log(citiesList);
+      setFilteredData(citiesList);
     }
   }, [props.cities]);
 
@@ -129,7 +127,8 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
               <th>City</th>
               {headers.map((value, index) => (
                 <th key={index}>
-                  <span style={{ color: "lightGrey" }}>|</span> &nbsp;
+                  <span style={{ color: "lightGrey" }}>|</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   {value}
                 </th>
               ))}
@@ -155,7 +154,7 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
                               ? classes.avg
                               : classes.fail
                           }
-                        ></span>{" "}
+                        ></span>
                         &nbsp;
                         {values[keys]}
                       </span>
@@ -165,13 +164,12 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
                     values["calibration"].map((calbs) =>
                       calbs["status"] === "Not Run" ? (
                         <td style={{ color: "grey" }}>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <span
                             onClick={() =>
                               props.selected(values["CityName"], calbs)
                             }
                           >
-                            &nbsp;&nbsp;&nbsp;
                             <AiOutlineMinusCircle />
                           </span>
                         </td>
@@ -184,12 +182,11 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
                                 props.selected(values["CityName"], calbs)
                               }
                             >
-                              &nbsp;&nbsp;&nbsp;&nbsp;
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                               <AiOutlineCheckCircle /> &nbsp;
                               <span style={{ color: "black" }}>
-                                {" "}
                                 {calbs["passed"]}
-                              </span>{" "}
+                              </span>
                               &nbsp;
                               <span
                                 style={{ color: "red" }}
@@ -210,7 +207,7 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
                                 props.selected(values["CityName"], calbs)
                               }
                             >
-                              &nbsp;&nbsp;&nbsp;&nbsp;
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                               <AiOutlineCloseCircle /> &nbsp;
                               <span style={{ color: "black" }}>
                                 {calbs["failed"]}
@@ -224,7 +221,7 @@ export const DisplayData: React.FC<{ cities; selected; selectedDateRange }> = (
                                   props.selected(values["CityName"], calbs)
                                 }
                               >
-                                &nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <AiOutlineCheckCircle /> &nbsp;
                                 <span style={{ color: "black" }}>
                                   {calbs["passed"]}
