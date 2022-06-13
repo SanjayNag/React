@@ -17,6 +17,9 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
 
   const dispatch = useDispatch();
 
+  const { allowedMaxDays, allowedDays, allowedRange, beforeToday, afterToday } =
+    DateRangePicker;
+
   const appData: any = useSelector((state) => state);
 
   const usePreviousVal = (value) => {
@@ -71,6 +74,7 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
   };
 
   const handleDateRangeChangePicker = async (dateRange: [Date, Date]) => {
+    console.log(dateRange);
     setDateRange(dateRange);
     const response = await callDateRangeFilterData(dateRange);
     response.length > 0 && dispatch(setDateTimeFilteredData(response));
@@ -92,6 +96,11 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
     );
   };
 
+  const changeBackgroundColor = (event) => {
+    event.target.style.boxShadow = "0 0 0 0";
+    event.target.style.borderColor = "#e5e5e5";
+  };
+
   return (
     <React.Fragment>
       <div className={classes.elementBackground}>
@@ -105,18 +114,23 @@ export const DateCityFilter: React.FC<{ getSelectedCities }> = (props) => {
         </Row>
 
         <div className={classes.elementPosition}>
-          <Row>
+          <Row
+            onMouseOver={changeBackgroundColor}
+            onClick={changeBackgroundColor}
+          >
             <Col xs={11}>
               <DateRangePicker
                 format="yyyy-MM-dd hh:mm aa"
                 showMeridian
                 onOk={handleDateRangeChangePicker}
                 onClean={handleCleanDateRangeChangePicker}
+                disabledDate={afterToday?.()}
                 placeholder="2022-06-22 06:52 PM ~ 2022-06-23 06:52 PM"
               />
               &nbsp; &nbsp;
               <CheckPicker
                 data={cities}
+                className={classes.optionPicker}
                 value={selectedCities}
                 style={{ width: 224 }}
                 onChange={handleChangePickerChange}
