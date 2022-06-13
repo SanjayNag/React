@@ -82,7 +82,7 @@
           "failed": 0,
           "passed": 3,
           "recovered": 0,
-          "status": "Passed",
+          "status": "Not Run",
           "additional_data": []
         }
       ]
